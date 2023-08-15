@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    background-color: brown;
+}
+body dt{
+    background-color:bisque;
+    padding: 8px;
+    margin-left: 6px;
+}
+body table{
+    align-content: center;
+    margin-left: 40%;
+}
+body h3{
+    background-color: crimson;
+}
+body h4{
+    color: indianred;
+}

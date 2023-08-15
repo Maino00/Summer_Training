@@ -1,0 +1,39 @@
+body #MainHeading{
+    color: rgb(149, 195, 252);
+    text-align: center;
+}
+p{
+    width: 1200px;
+    background-color: bisque;
+    text-align: center;
+
+}
+body #Founder{
+    width: 1200px;
+    margin-left: 30px;
+}
+body #location{
+    width: 500px;
+    height: 300px;
+}
+body ul{
+    width: 100%;
+    background-color: rgb(194, 220, 220);
+    list-style:  none;
+    padding: 0px;
+    width: 100%;
+}
+body li{
+    display: inline-block;
+    width: calc(100% / 5);
+    margin-right: 10px 10px 10px 10px;
+    padding: 8px;
+    text-align: center;
+}
+body h2{
+    background-color: aquamarine;
+    text-align: center;
+}
+body #top a{
+    background-color: rgb(198, 163, 120);
+}
