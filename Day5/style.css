@@ -1,0 +1,32 @@
+h1 {
+    background-color: aliceblue;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    padding: 5px;
+    margin-left: 40px;
+}
+hr{
+    padding: 10px;
+    border: none;
+}
+
+body .container {
+    border: 5px solid bisque;
+    padding: 20px;
+    width: 200px;
+    margin-left: 500px;
+}
+
+body #btn3, #btn2, #btn4, #btn5, #btn6, #btn7{
+    padding: 4px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: aliceblue;
+    border-color: bisque;
+    text-align: center;
+    margin-left: 75px;
+    display: inline;
+}
