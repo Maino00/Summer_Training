@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+}
+#form-content{
+    background-color:antiquewhite;
+    width: 400px;
+    padding: 20px;
+}
+button{
+    background-color:antiquewhite;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 6px;
+    border: 2px solid palevioletred;
+}
+#register{
+    margin-right: 50px;
+    margin-left: 30px;
+    width: 100px;
+}
+#reset{
+    margin-right: 50px;
+        margin-left: 30px;
+    width: 100px;
+}
+#nameErrors{
+    color:red;
+}
+#ageErrors{
+    color:red;
+}

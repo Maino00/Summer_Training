@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 7</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <h1>Day 7</h1>
+    <br /><br />
+    <div id="form-content">
+      <form id="myForm">
+      Name:
+      <input type="text" name="Name" id="Name" required/><br />
+      <p id="nameErrors"></p>
+      <br />
+      Age: <input type="number" name="Age" id="Age" required/><br />
+      <p id="ageErrors"></p>
+      <br />
+      City:
+      <select name="city" id="City">
+        <option value="Egypt">Egypt</option>
+        <option value="USA">USA</option>
+        <option value="Saudi Arabia">Saudi Arabia</option>
+        <option value="Moroco">Moroco</option></select
+      <p id="cityErrors"></p>
+      <br />
+      Hobbies:<br>
+        <div id="checkbox">
+<input type="checkbox" id="hobby1" name="hobby1" value="Football" />
+      <label for="hobby1"> Football</label>
+        </div>
+        <div id="checkbox">
+<input type="checkbox" id="hobby2" name="hobby2" value="Reading" />
+      <label for="hobby2"> Reading</label>
+        </div>
+        <div id="checkbox">
+<input type="checkbox" id="hobby3" name="hobby3" value="Writing" />
+      <label for="hobby3"> Writing</label>
+    <p id="checked"></p>
+
+        </div><br /><br />
+      <button id="register" type="submit">Register</button>
+      <button id="reset" type="reset">Reset</button>
+      </form>
+    </div>
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
