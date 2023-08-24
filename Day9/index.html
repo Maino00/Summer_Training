@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 9</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Day 9</h1>
+    <br />
+    <hr />
+    <br /><br />
+    <h1>Task 1</h1>
+    <br />
+    <div id="videoDiv">
+      <button id="startVideo">Start Video</button>
+      <progress id="progress" value="0" max="100"></progress>
+      <span id="percentage">0%</span>
+      <video id="video" src="./Assets/Video.mp4"></video>
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+      <button id="mute">Mute</button>
+      Volume<input type="range" id="vRange" min="0" max="1" /> Speed<input
+        type="range"
+        id="sRange"
+        min="0.5"
+        max="2"
+      />
+    </div>
+    <hr />
+    <br /><br />
+    <h1>Task 2</h1>
+    <br />
+    <svg width="450" height="450" viewBox="0 0 200 200" class="house">
+      <g>
+        <polygon fill="#6B6570" points="100,100 150,150 50,150" />
+        <rect fill="#2CEAA3" width="200" height="10" x="0" y="190" />
+        <rect fill="#8C5E58" width="80" height="50" x="60" y="150" />
+        <circle fill="#2CEAA3" cx="100" cy="170" r="15" />
+      </g>
+    </svg>
+    <script src="./main.js"></script>
+  </body>
+</html>
