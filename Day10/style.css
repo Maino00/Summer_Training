@@ -1,0 +1,155 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    text-align: center;
+}
+
+/* Task 1 */
+#imgDiv{
+    background-color: blanchedalmond;
+    display: flex;
+        height: 500px;
+}
+img{
+    width: 500px;
+        height: 500px;
+        margin: auto;
+    transition: 1s ease-in-out;
+}
+img:hover{
+    opacity: 0;
+}
+
+
+/* Task 2 */
+input:required:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:required:focus:valid {
+    background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95% 50% lightgreen;
+    background-size: 25px;
+}
+
+input:focus:invalid {
+    background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% lightsalmon;
+    background-size: 25px;
+}
+
+
+
+
+
+/* Task 3 */
+.traffic-light {
+    background-color: grey;
+    width: 100px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+.traffic-light .red {
+    background: red;
+    background-image: radial-gradient(brown, transparent);
+    background-size: 5px 5px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    top: 20px;
+    left: 35px;
+}
+
+.traffic-light .red:hover {
+    width: 60px;
+    height: 60px;
+    border: 10px solid rgb(219, 106, 106);
+}
+
+.traffic-light .green {
+    background: green;
+    background-image: radial-gradient(lime, transparent);
+    background-size: 5px 5px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: dotted 2px lime;
+    top: 270px;
+    left: 35px;
+}
+
+.traffic-light .green:hover {
+    width: 60px;
+    height: 60px;
+    border: 10px solid rgb(116, 208, 116);
+}
+
+.traffic-light .yellow {
+    background: yellow;
+    background-image: radial-gradient(orange, transparent);
+    background-size: 5px 5px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: dotted 2px yellow;
+    top: 145px;
+    left: 35px;
+}
+
+.traffic-light .yellow:hover {
+    width: 60px;
+    height: 60px;
+    border: 10px solid rgb(151, 151, 64);
+}
+
+
+/* Task 4 */
+#shapesDiv{
+    background-color: whitesmoke;
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+}
+#square {
+    background: rgb(249, 249, 175);
+        width: 100px;
+        height: 100px;
+}
+#square:hover{
+    animation-name: shapesDiv;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+}
+@keyframes shapesDiv{
+    50%{
+        background: rgb(234, 158, 158);
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+    }
+    75%{
+        width: 100px;
+            height: 100px;
+            background: rgb(195, 232, 244);
+            transform: skew(25deg);
+    }
+    100%{
+        background: rgb(208, 162, 238);
+            width: 70px;
+            height: 100px;
+    }
+}
