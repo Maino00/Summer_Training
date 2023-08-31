@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display:grid;
+    grid-template-areas: "nav nav nav"
+    "aside main main"
+    "footer footer footer";
+}
+nav{
+    background-color:lightblue;
+    color: black;
+    grid-area: nav;
+}
+nav > ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    height: 80px;
+    align-items: center;
+}
+.slider img{
+    width: 100%;
+}
+footer{
+    grid-area: footer;
+}
+main{
+    grid-area: main;
+}
+aside{
+    grid-area: aside;
+    background-color: lightgreen;
+}
+
+#products{
+    display: grid;
+    grid-template-areas:"p2 p3 p4"
+    "p2 p3 p4"
+    "p2 p3 p4";
+    text-align: center;
+}
+
+#prod1{
+    grid-area: p1;
+    background-color: lightcyan;
+}
+#prod2 {
+    grid-area: p2;
+    background-color: lightgray;
+}
+#prod3 {
+    grid-area: p3;
+    background-color: lightpink;
+}
+#prod4 {
+    grid-area: p4;
+    background-color: lightsalmon;
+}
+img{
+    max-width: 90%;
+    width: 300px;
+    height: 300px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: lightcoral;
+}
+
+footer>section {
+    flex: 0 1 25%;
+}
+
+
+@media screen and (max-width: 599.9px) {
+    #products {
+        grid-template-areas: "p2"
+            "p3"
+            "p4";
+        text-align: center;
+    }
+        body {
+            grid-template-areas: "nav nav nav"
+                "aside aside aside"
+                "main main main"
+                "footer footer footer";
+        }
+}
+
+@media screen and (min-width: 600px) and (max-width:799.9px) {
+    #products {
+            grid-template-areas: "p2 p3 p4"
+                "p2 p3 p4"
+                "p2 p3 p4";
+        text-align: center;
+    }
+    body{
+        grid-template-areas: "nav nav nav"
+                "aside aside aside"
+                "main main main"
+                "footer footer footer";
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width:999.9px) {
+    #products {
+        grid-template-areas: "p2 p3 p4"
+                "p2 p3 p4"
+                "p2 p3 p4";
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #products {
+        grid-template-areas: "p2 p3 p4"
+                "p2 p3 p4"
+                "p2 p3 p4";
+        text-align: center;
+    }
+}
