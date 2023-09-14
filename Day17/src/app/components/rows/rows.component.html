@@ -1,0 +1,56 @@
+<div class="card">
+  <form [formGroup]="courseForm">
+    <div class="mt-5">
+      <div class="form-row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label>Course Name:</label>
+          </div>
+          <div class="form-row">
+            <div class="col-12">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="name"
+                formControlName="courseName"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-row mt-4">
+          <div col-md-6>
+            <button type="button" class="btn btn-primary" (click)="addCourse()">
+              Add
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div col-md-8 mb-4 mt-4>
+    <table class="table table-boardered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of listData">
+          <td>
+            <span>{{ item.courseName }}</span>
+          </td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-primary"
+              (click)="remove(item)"
+            >
+              Remove
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
