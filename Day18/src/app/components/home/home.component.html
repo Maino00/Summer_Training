@@ -1,0 +1,11 @@
+<div class="bg-primary-subtle p-3 m-2">
+  <p>home works! (parent)</p>
+  <p class="text-light bg-dark rounded p-2">{{ parentData }}</p>
+  <h3>From parent to child</h3>
+  <p class="text-light bg-dark p-2 rounded"></p>
+  <app-child [fromParent]="parentData"></app-child>
+
+  <h3>from child to parent</h3>
+  <p class="text-light bg-dark p-2 rounded">{{ fromChild }}</p>
+  <app-second-child (myEvent)="getChildData($event)"></app-second-child>
+</div>

@@ -1,0 +1,6 @@
+<p>child works!</p>
+<p class="text-light bg-dark rounded p-2">{{ fromParent }}</p>
+
+<h3>from child to second child</h3>
+<p class="text-light bg-dark p-2 rounded">{{ fromSecondChild }}</p>
+<app-second-child (myEvent)="getSecondChildData($event)"></app-second-child>
