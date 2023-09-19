@@ -1,0 +1,36 @@
+<h1 class="mb-5 mt-2">Product Form</h1>
+<form (submit)="SaveData($event)">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputEmail1"
+      name="name"
+      [(ngModel)]="productName"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Price</label>
+    <input
+      type="number"
+      class="form-control"
+      id="exampleInputPassword1"
+      name="price"
+      [(ngModel)]="productPrice"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInput3" class="form-label">Quantity</label>
+    <input
+      type="number"
+      class="form-control"
+      id="exampleInput3"
+      name="quantity"
+      [(ngModel)]="productQuantity"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">
+    {{ productID == 0 ? "Add" : "Edit" }}
+  </button>
+</form>
